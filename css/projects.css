@@ -12,7 +12,7 @@
     display: inline-block;
     min-height: 500px;
     position: relative;
-    top: -80px;
+    top: 20px;
     width: 23%;
 }
 .col-3-5 {
@@ -33,3 +33,16 @@
     width: 200px;
 }
 
+.tranbox,.blackbox {
+    display:none;
+}
+.headboard {
+    background: url("../img/herty.jpg") repeat-x scroll 0 -70px rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #006BFF;
+    height: 185px;
+    margin: 0 0 15px;
+    overflow: hidden;
+    position: relative;
+    top: -43px;
+    width: 100%;
+}

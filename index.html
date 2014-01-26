@@ -3,11 +3,11 @@
 	<head>
 	<title>Jaicob Stewart</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />	
-	<link rel="stylesheet" type="text/css" href="css/home.css" />	
+	<link id="style"rel="stylesheet" type="text/css" href="css/home.css" />	
 	<link rel="stylesheet" type="text/css" href="css/fontGuide.css" />	
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Shadows+Into+Light|Raleway:400,300' rel='stylesheet' type='text/css'>
 	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
-	<script  src="scripts.js"></script>
+	<script  src="js/scripts.js"></script>
 	</head>
 	
 	<body>	
@@ -17,11 +17,11 @@
 						<div class="container">
 							<nav class="headnav">
 								<ul class="group">
-									<li class="group "><a href="#">Home</a></li>
-									<li class="group"><a href="../about/about.html">About</a></li>
-									<li class="group"><a href="../blog/blog.html">Blog</a></li>
-									<li class="group"><a href="../projects/projects.html">Projects</a></li>		
-									<li class="group"><a href="../contact/contact.html">Contact</a></li>
+									<li class="group" id="home"><button onclick="navigate('html/home.html','css/home.css')">Home</button></li>
+									<li class="group" id="about"><button onclick="navigate('html/about.html','css/about.css')">About</button></li>
+									<li class="group" id="blog"><button onclick="navigate('html/blog.html','css/blog.css')">Blog</button></li>
+									<li class="group" id="projects"><button onclick="navigate('html/projects.html','css/projects.css')">Projects</button></li>		
+									<li class="group" id="contact"><button onclick="navigate('html/contact.html','css/contact.css')">Contact</button></li>
 								</ul>
 							</nav>
 						</div>	
@@ -40,42 +40,15 @@
 						</div>	
 					</div>
 				</div>
-<!--content-->	<section class="content">
-					<article class="group">
-						<h2>Welcome</h2>
-						<h3>Thanks for making your way to my site, have a look around and feel free to contact me if you have any questions. </h3>
-						<p> I opened the letter and pulled out a sheaf of half a dozen pages, all written in the same laborious script. Thanks to my work, I am experienced in the reading of difficult manuscripts. There is no great secret to it. Patience and practice are all that is required. That and the willingness to cultivate an inner eye. When you read a manuscript that has </p>
-					</article>	
-					<aside class="group">
-						<h3>Recent Updates</h3>
-							<nav class="updates">								
-								<ul id="updatenavbar">
-									<li  id="newsbut" class="activeupdate group">
-										<button onclick="updateon(newsbut,newsupdates)"> News </button>	
-									</li>
-									<li id="blogbut" class="group">
-										<button onclick="updateon(blogbut,blogupdates)"> Blog </button>
-									</li>		
-									<li id="projectbut" class="group">
-										<button onclick="updateon(projectbut,projectupdates)">Projects</button>						
-								</ul>
-							</nav>
-							<ul id="updatecontent">
-									<li id="newsupdates" class="group restingnav  activenav">
-										<h4>More to Come</h4>
-										<p>While the sight is up and running there is more content that will be added in the near future</p>	
-									</li>
-									<li id="blogupdates" class="group restingnav "> <h4>The Making of This Site</h4>
-										<p>Read abou how this site came to be here</p>
-											
-										
-									</li>
-									<li id="projectupdates" class="group restingnav "> <h4>To the App Store</h4>
-										<p>find out more about my latest project involving mobile applications</p>	
-									</li>							
-							</ul>	
-					</aside>
-				</section>		
+				
+				
+<!--PUT THE INCLUDE HERE FOR CONTENT OF THIS PAGE--><div id="pageContent">
+														<script>
+														navigate('html/home.html','css/home.css');
+														</script>
+													</div>
+
+
 <!--footer-->	<footer>
 					<div class="container">
 						<nav class="footnav" align="left">

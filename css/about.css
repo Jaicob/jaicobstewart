@@ -1,3 +1,11 @@
+.content {
+    margin: 0 10px;
+  	width:100%;
+    min-height: 465px;
+   
+    padding: 0 15px;
+}
+
 
 article {
     float: left;
@@ -23,4 +31,26 @@ article figure {
     margin-right: 0;
     overflow: hidden;
     width: 300px;
+}
+
+section:nth-of-type(2n) {
+    background-color: #D3D3D3;
+    width: 100%;
+    max-width: none;
+    padding: 0px 25px;
+    margin: 0;
+}
+
+.tranbox,.blackbox {
+    display:none;
+}
+.headboard {
+    background: url("../img/herty.jpg") repeat-x scroll 0 -70px rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #006BFF;
+    height: 185px;
+    margin: 0 0 15px;
+    overflow: hidden;
+    position: relative;
+    top: -43px;
+    width: 100%;
 }

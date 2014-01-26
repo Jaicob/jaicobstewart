@@ -31,5 +31,12 @@ function updateoff(revert,revertbut)
 	toRevert.style.textShadow="0px 0px 3px black";
 }
 
+function navigate(pageToLoad,style)
+{
+	var pageToLoad;
+	$("#pageContent").load(pageToLoad);
+	$('#style').attr('href',style);
+}
+
 
 
