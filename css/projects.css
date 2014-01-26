@@ -1,0 +1,35 @@
+
+.content {
+    margin: 0;
+    max-width: 1000px;
+    min-height: 465px;
+    overflow: hidden;
+    padding: 0px 20px;
+}
+
+.col-1-5 {
+    background-color: #E6E6E6;
+    display: inline-block;
+    min-height: 500px;
+    position: relative;
+    top: -80px;
+    width: 23%;
+}
+.col-3-5 {
+    background-color: #E6E6E6;
+    display: inline-block;
+    min-height: 500px;
+    position: relative;
+    width: 53%;
+}
+.col-1-5 figure img {
+    height: 100px;
+    overflow: hidden;
+    width: 100px;
+}
+.col-3-5 figure img{
+    height: 200px;
+    overflow: hidden;
+    width: 200px;
+}
+

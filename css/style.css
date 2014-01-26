@@ -1,0 +1,203 @@
+
+html, body, .center {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+html, body {
+    background-color: #FFFFFF;
+    margin-top: 0;
+}
+section {
+    background-color: #F5F5F5;
+}
+.content {
+    margin: 0 10px;
+    max-width: 1000px;
+    min-height: 465px;
+    overflow: hidden;
+    padding: 0 15px;
+}
+.container {
+    margin: 0 10px;
+    max-width: 1000px;
+    padding: 0 15px;
+}
+
+header {
+    background-color: #2D2D2D;
+    border-top: 6px solid #A9A9A9;
+    height: 80px;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+nav.headnav ul {
+    float: right;
+    height: 37px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 17px;
+    width: 305px;
+}
+.headnav ul li {
+    border-bottom: 1px solid #006BFF;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: background-color 0.3s ease 0s;
+    width: 61px;
+}
+.headnav a {
+    color: #FFFFFF;
+    font-size: 0.9em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    top: 8px;
+}
+.logo {
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    border-style: solid;
+    display: inline-block;
+    float: left;
+    height: 60px;
+    left: 0.002%;
+    margin-left: 0;
+    margin-right: 4%;
+    margin-top: auto;
+    position: relative;
+    top: 7px;
+    width: 70px;
+}
+.logoJS {
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: 'Shadows Into Light';
+    font-size: 2.7em;
+    left: 15px;
+    position: absolute;
+    top: -47px;
+}
+.tranbox {
+    border: 2px solid #FFFFFF;
+    height: 82px;
+    left: -273px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 14px;
+    width: 450px;
+    z-index: 54;
+}
+.headboard {
+    background: url("../img/herty.jpg") repeat-x scroll 0 -70px rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #006BFF;
+    height: 291px;
+    margin: 0 0 15px;
+    overflow: hidden;
+    position: relative;
+    top: -43px;
+    width: 100%;
+}
+.blackbox {
+    background: none repeat scroll 0 0 #000000;
+    height: 85px;
+    left: -273px;
+    opacity: 0.46;
+    position: relative;
+    top: 98px;
+    width: 448px;
+}
+footer {
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    height: 150px;
+    position: relative;
+}
+footer .container:last-of-type {
+    background-color: #2D2D2D;
+    margin: 0 10px;
+    max-width: 1000px;
+    padding: 0 15px;
+    text-align: left;
+    width: 100%;
+}
+.footnav {
+    position: relative;
+}
+.footnav ul {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.footnav ul li {
+    bottom: 0;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    width: 60px;
+}
+.footnav a {
+    color: #DEDEDE;
+    float: left;
+    font-size: 0.7em;
+    position: relative;
+    text-align: left;
+    text-decoration: underline;
+    top: 7px;
+}
+.group:before, .group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+}
+.headnav ul li:hover {
+    background-color: #006BFF;
+}
+@media screen and (max-width: 1000px) {
+.container {
+    max-width: 961px;
+}
+.logo {
+    display: none;
+}
+}
+@media screen and (max-width: 825px) {
+.container {
+    max-width: 768px;
+}
+nav.headnav ul {
+    float: none;
+}
+header {
+    height: 160px;
+}
+p.headText {
+    float: none;
+}
+}
+@media screen and (max-width: 590px) {
+.container {
+}
+aside {
+    float: none;
+    width: 60%;
+}
+article {
+    float: none;
+    width: 100%;
+}
+}

@@ -1,0 +1,26 @@
+
+article {
+    float: left;
+    height: auto;
+    padding: 40px 0;
+    position: relative;
+    width: 100%;
+}
+article figure {
+    float: left;
+    height: 350px;
+    margin-left: 0;
+    margin-top: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 300px;
+    box-shadow: 1px 5px 8px #181818;
+}
+.middlefig {
+    float: right;
+    height: 350px;
+    margin-left: 40px;
+    margin-right: 0;
+    overflow: hidden;
+    width: 300px;
+}

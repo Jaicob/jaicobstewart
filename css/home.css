@@ -1,0 +1,101 @@
+article {
+    border-bottom: 1px dotted #808080;
+    float: left;
+    height: auto;
+    padding: 15px;
+    position: relative;
+    width: 58.667%;
+    margin-right: 0px;
+}
+aside {
+    float: right;
+    height: auto;
+    padding: 29px 15px 15px;
+    position: relative;
+    right: 0;
+    width: 29.2222%;
+}
+aside nav {
+    border-left: medium none;
+    height: 224px;
+    left: -57.4%;
+    position: relative;
+    text-align: right;
+    text-decoration: none;
+    top: -3px;
+    width: 35.58%;
+}
+aside nav ul {
+    padding-left: 0%;
+}
+aside nav li {
+    border-right: 3px solid;
+    height: 66px;
+    list-style: none outside none;
+    margin-right: auto;
+    min-height: 50px;
+    text-decoration: none;
+    transition: height 1s ease 0s;
+}
+aside button {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    color: #808080;
+    left: 0;
+    margin-right: auto;
+    position: relative;
+    text-align: right;
+}
+#updatecontent {
+    font-size: 0.82em;
+    height: 150px;
+    left: 7.871%;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -227px;
+    width: 94.1071%;
+}
+.restingnav {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: rgba(0, 0, 0, 0);
+    height: 45px;
+    line-height: 1.5;
+    margin-bottom: 2px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 0 0 2px #525252;
+    transition: all 1s ease 0s;
+}
+#updatecontent h4, #updatecontent p {
+    margin: 0;
+    text-align: center;
+}
+.activenav {
+    background: none repeat scroll 0 0 #FDFDFD;
+    box-shadow: 0 0 2px #A9A9A9;
+    color: #525252;
+    height: 70px;
+    margin-bottom: 2px;
+    position: relative;
+    text-align: center;
+    text-shadow: none;
+    z-index: 5;
+}
+.activeupdate {
+    border-right-color: #0046A6;
+    height: 90px;
+}
+
+@media screen and (max-width: 590px) {
+	aside {
+	    float: none;
+	    width: 60%;
+	}
+	article {
+	    float: none;
+	    width: 100%;
+	}
+}
