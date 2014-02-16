@@ -106,7 +106,7 @@ nav.headnav ul {
     margin: 0;
     padding: 0;
     position: relative;
-    top: 14px;
+    top: 13px;
     width: 450px;
     z-index: 54;
 }
@@ -146,6 +146,8 @@ footer .container:last-of-type {
     width: 100%;
 }
 .footnav {
+	float:left;
+ 	width:303px;
     position: relative;
 }
 .footnav ul {
@@ -173,6 +175,65 @@ footer .container:last-of-type {
     top: 7px;
 }
 
+.socialIcons {
+	float:right;
+	width:303px;
+		vertical-align:top;
+    position: relative;
+}
+.socialIcons ul {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.socialIcons ul li {
+    bottom: 0;
+    display: inline-block;
+    float: right;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    width: 60px;
+}
+
+.icon{
+	width:32px;
+	height:32px;
+	float: right;
+    overflow:hidden;
+    position: relative;
+    top:7px;   
+    transition:background ease .3s;
+}
+
+.icon:hover{cursor:pointer;}
+#github {
+    background: url("../img/social_media_sprite.png") no-repeat scroll -96px -32px rgba(0, 0, 0, 0);
+    
+}
+#github:hover{
+	 background: url("../img/social_media_sprite.png") no-repeat scroll -96px 0 rgba(0, 0, 0, 0);
+	 
+}
+#google {
+    background: url("../img/social_media_sprite.png") no-repeat scroll -64px -32px rgba(0, 0, 0, 0);
+}
+#google:hover{
+	background: url("../img/social_media_sprite.png") no-repeat scroll -64px 0 rgba(0, 0, 0, 0);
+}
+#linkedin {
+    background: url("../img/social_media_sprite.png") no-repeat scroll -32px -32px rgba(0, 0, 0, 0);
+}
+#linkedin:hover{
+	background: url("../img/social_media_sprite.png") no-repeat scroll -32px 0 rgba(0, 0, 0, 0);
+}
+#twitter {
+    background: url("../img/social_media_sprite.png") no-repeat scroll 0px -32px rgba(0, 0, 0, 0);
+}
+#twitter:hover{
+	background: url("../img/social_media_sprite.png") no-repeat scroll 0px 0 rgba(0, 0, 0, 0);
+}
 /*Float fix to prevent elements collapsing*/
 .group:before, .group:after {
     content: "";
@@ -206,14 +267,27 @@ footer .container:last-of-type {
 	.container {
 	    max-width: 768px;
 	}
-	nav.headnav ul {
-	    float: none;
+	nav.headnav ul, p.headText, .footnav, .footnav ul li, .socialIcons, .socialIcons ul li, .icon{
+		float:none;
 	}
+
 	header {
 	    height: 160px;
 	}
-	p.headText {
-	    float: none;
+	.footnav{
+		margin:0 auto;
+		width:auto;
+	}
+	
+	.socialIcons{
+		margin:0 auto;
+		width:auto;
+	}
+	
+	footer .container:last-of-type {
+		width:auto;
+		text-align:center;
+		margin-top:20px;	
 	}
 }
 @media screen and (max-width: 590px) {
@@ -227,4 +301,9 @@ footer .container:last-of-type {
 	    float: none;
 	    width: 100%;
 	}
+	
+	.headnav button{
+		font-size:.7em;	
+	}
+	
 }
