@@ -75,6 +75,7 @@ nav.headnav ul {
     text-decoration: none;
     top: 8px;
 }
+
 .logo {
     border-color: #FFFFFF;
     border-radius: 5px;
@@ -101,12 +102,14 @@ nav.headnav ul {
 }
 .tranbox {
     border: 2px solid #FFFFFF;
+    display: flex;
+    float: left;
     height: 82px;
-    left: -273px;
     margin: 0;
     padding: 0;
     position: relative;
-    top: 13px;
+    top: 61px;
+    vertical-align: top;
     width: 450px;
     z-index: 54;
 }
@@ -122,12 +125,14 @@ nav.headnav ul {
 }
 .blackbox {
     background: none repeat scroll 0 0 #000000;
-    height: 85px;
-    left: -273px;
+    display: inline-flex;
+    float: left;
+    height: 82px;
     opacity: 0.46;
-    position: relative;
-    top: 98px;
-    width: 448px;
+    position: inherit;
+    top: 0px;
+    vertical-align: top;
+    width: 450px;
 }
 
 /*footer styling*/
@@ -165,7 +170,23 @@ footer .container:last-of-type {
     position: relative;
     width: 60px;
 }
-.footnav a {
+
+.footnav button{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: none; 
+    color: #DEDEDE;
+    float: left;
+    font-size: 0.7em;
+    position: relative;
+    text-align: left;
+    text-decoration: underline;
+    top: 7px;
+    left:-8px;
+ 
+
+}
+
+/*.footnav a {
     color: #DEDEDE;
     float: left;
     font-size: 0.7em;
@@ -175,6 +196,7 @@ footer .container:last-of-type {
     top: 7px;
 }
 
+/*social media links*/
 .socialIcons {
 	float:right;
 	width:303px;
@@ -254,6 +276,11 @@ footer .container:last-of-type {
     cursor:pointer;
 }
 
+.footnav button:hover {
+    cursor:pointer;
+}
+
+
 /*Media Queries to make site responsive*/
 @media screen and (max-width: 1000px) {
 	.container {
@@ -292,6 +319,7 @@ footer .container:last-of-type {
 }
 @media screen and (max-width: 590px) {
 	.container {
+		max-width: 500px;
 	}
 	aside {
 	    float: none;

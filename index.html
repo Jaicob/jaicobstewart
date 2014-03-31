@@ -32,10 +32,11 @@
 							<p class = "headText","group">JAICOB STEWART</p>
 						</div>								
 				</header>	
+				
 <!--banner-->	<div class="headboard">	
-					<div class="blackbox"></div>
-					<div class="container">
-						<div class="tranbox">
+					<div class = "container">
+						<div class="tranbox group">
+							<div class="blackbox group"></div>
 							<p style="color:white; font-size:2.0em; opacity:1;z-index:70; position: absolute;left: 5%;top:-18px;">Welcome to my site...</p>
 						</div>	
 					</div>
@@ -53,11 +54,12 @@
 					<div class="container group">
 						<nav class="footnav group" align="left">
 							<ul>
-								<li class="group "><a href="#">Home</a></li>
-								<li class="group"><a href="#">About</a></li>
-								<li class="group"><a href="#">Blog</a></li>
-								<li class="group"><a href="#">Projects</a></li>
-								<li class="group"><a href="#">Contact</a></li>
+								<li class="group" id="f_home"><button onclick="navigate('html/home.html','css/home.css')">Home</button></li>
+								<li class="group" id="f_about"><button onclick="navigate('html/about.html','css/about.css')">About</button></li>
+								<li class="group" id="f_blog"><button onclick="navigate('html/blog.html','css/blog.css')">Blog</button></li>
+								<li class="group" id="f_projects"><button onclick="navigate('html/projects.html','css/projects.css')">Projects</button></li>		
+								<li class="group" id="f_contact"><button onclick="navigate('html/contact.html','css/contact.css')">Contact</button></li>
+
 							</ul>
 						</nav>
 						
@@ -72,7 +74,7 @@
 						</nav>
 					</div>	
 					<div class="container">
-						<small>Jaicob Stewart,2013</small>
+						<small> Jaicob Stewart,2013</small>
 					</div>
 				</footer>
 			</section>
